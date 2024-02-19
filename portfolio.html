@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portt.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+     <div id="header">
+        <div class="container">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#ex">Activities</a></li>
+                    <li><a href="#Achievements">Achievements</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <!-- <i class="fas fa-times"></i> -->
+                </ul>
+                <!-- <i class="fas fa-bars"></i> -->
+            </div>
+            <div class="header">
+                <br>
+                <p>Developer</p>
+                <h1>Hi, I'm Madhumita Dharshinee <br>Full<span>stack Developer </span></h1>
+            </div>
+        </div>
+     </div>
+     <div id="About">
+        <div class="container">
+            <div class="row"> 
+                <br>
+                <br>
+                <div class="about-col-1">
+                    <br>
+                    <img src="doodle.jpg" alt="my picture">
+                </div>
+                <div class="about-col-2">
+                    <br><br><br><br>
+                    <h1 class="title">About me</h1>
+                    <p>I am Madhumita Dharshinee G, an aspiring fullstack Developer from Namakkal, India, with a passion for PCB designs and Web development.With a solid background in Electronics and Communication Engineering, I maintain a 8.24 CGPA.Beyond tech, I enjoy news reading and public speaking.I'm seeking an opportunity to join a company that
+                        can help me in enhancing my skills and knowledge</p>
+                        <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('soft')" >Soft Skills</p>
+                        <p class="tab-links" onclick="opentab('technical')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('areas')">Areas of Expertise</p>
+                    </div>
+                    <div  class="tab-contents active-tab" id="soft">
+                        <ul>
+                            <li>Quick learner</li>
+                            <li>Adaptability</li> 
+                            <li>Team Work</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="technical">
+                        <ul>
+                            <li>C programming</li>
+                            <li>MERN Stack</li>
+                            <li>Js,MySQL</li>
+                        </ul>
+                    </div> <div class="tab-contents" id="areas">
+                        <ul>
+                            <li>PCB Design</li>
+                            <li>Analog Design</li>
+                             <li>Web Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+<!-------Achievements------>
+     <div id="Achievements">
+        <div class="container">
+            <br><br><br>
+            <h1 class="title">Achievements </h1>
+            <div class="list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Developed the Charity Donation platform which will be more useful for people who are in poor stage. We the people collect the donations through the website and give them</p>
+                </div>
+                <div>
+                    <h2>RoboSoccer Bot</h2>
+                    <p>Our team developed the roboSoccer Bot controlled by Fly sky transmitter. We have participated at World Robotics Championship technoxian 2022 at NewDelhi</p>
+                </div>
+                <div><h2>IOT</h2>
+                    <p>Demonstrated strong skills in
+                        hardware programming, IoT connectivity, and
+                        sustainable automation practices, resulting in an
+                        effective solution for real-time soil moisture
+                        monitoring.</p></div>
+            </div>
+        </div>
+     </div>
+     <!---------EXTRACURRICULAR ACTIVITIES---------->
+     <div id="ex">
+        <div class="container">
+            <br><br><br>
+            <h1 class="title">Extra-curricular activities</h1>
+            <div class="extra">
+                <div class="allindia">
+                    <img src="allindia.png" alt="all-india" width="10px" height="400px">
+                    <div class="text">
+                        <h1>All India University</h1>
+                        <p>Represented a ANNA University Cross country race in All
+                            India[2023]</p>
+                    </div>
+                </div>
+                <div class="allindia">
+                    <img src="interzone.jpg" alt="interzone">
+                    <div class="text">
+                        <h1>Interzone Meet</h1>
+                        <p>Gold medal in 5,000 m and silver medal in 10,000 m in
+                            Interzone athletics
+                            </p>
+                    </div>
+                </div>
+                <div class="allindia">
+                    <img src="trainer.jpg" alt="trainer">
+                    <div class="text">
+                        <h1>Trainer</h1>
+                        <p>Student Trainer of Web Development includes HTML,CSS and JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!---------contact-------->
+     <div id="contact">
+        <div class="container">
+                <div class="contact-left">
+                    <br>
+                    <h4 class="title">Contact Me</h4>
+                    <p><a href=""><i class="fa-solid fa-paper-plane"></i></a>madhumitadharshinee@gmail.com</p>
+                    <p><a href=""><i class="fa-solid fa-phone"></i></a>8248269558</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_._madhhu_._?igsh=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/madhumita1512"><i class="fab fa-github"></i></a>
+                    </div>
+                    <!-- <a href="" class="btn btn2">Download CV</a> -->
+                </div>  
+        </div>
+     </div>
+     <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+     </script>
+</body>
+</html>
